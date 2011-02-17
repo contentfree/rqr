@@ -842,6 +842,9 @@ SWIG_UnpackDataName(const char *c, void *ptr, size_t sz, const char *name) {
 #ifndef RARRAY_PTR
 # define RARRAY_PTR(x) RARRAY(x)->ptr
 #endif
+#ifndef STR2CSTR
+# define STR2CSTR(s) StringValuePtr(s)
+#endif
 
 /*
  * Need to be very careful about how these macros are defined, especially

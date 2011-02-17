@@ -1,16 +1,17 @@
 require 'rqr/version'
 
-AUTHOR = 'Ryota Maruko'  # can also be an array of Authors
-EMAIL = "pools _at_ rubyforge _dot_ org"
-DESCRIPTION = "A ruby library to create qrcode. Output: PS, JPEG, PNG, EPS, TIFF."
-GEM_NAME = 'rqr' # what ppl will type to install your gem
-RUBYFORGE_PROJECT = 'rqr' # The unix name for your project
-HOMEPATH = "http://#{RUBYFORGE_PROJECT}.rubyforge.org"
-DOWNLOAD_PATH = "http://rubyforge.org/projects/#{RUBYFORGE_PROJECT}"
+AUTHOR             = 'Ryota Maruko'  # can also be an array of Authors
+EMAIL              = "pools _at_ rubyforge _dot_ org"
+DESCRIPTION        = "A ruby library to create qrcode. Output: PS, JPEG, PNG, EPS, TIFF."
+GEM_NAME           = 'rqr' # what ppl will type to install your gem
+RUBYFORGE_PROJECT  = 'rqr' # The unix name for your project
+HOMEPATH           = "http://#{RUBYFORGE_PROJECT}.rubyforge.org"
+DOWNLOAD_PATH      = "http://rubyforge.org/projects/#{RUBYFORGE_PROJECT}"
 
-@config_file = "~/.rubyforge/user-config.yml"
-@config = nil
+@config_file       = "~/.rubyforge/user-config.yml"
+@config            = nil
 RUBYFORGE_USERNAME = "unknown"
+
 def rubyforge_username
   unless @config
     begin
